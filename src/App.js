@@ -1,12 +1,17 @@
-import './App.css';
-import Header from './components/layout/header';
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+
+/* COMPONENTS */
+import InitComponent from "./components/containers/initComponent";
 
 function App() {
-  return (
-    <div className="App">
-    <Header></Header>
-    </div>
-  );
+  return <Router>
+    <Routes>
+      <Route path="/"
+            element={
+             <InitComponent></InitComponent>
+            }></Route>
+    </Routes>
+  </Router>;
 }
 
 export default App;
