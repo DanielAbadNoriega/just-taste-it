@@ -1,0 +1,26 @@
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+iframe,
+video,
+audio {
+  max-width: 100%;
+  border: 0;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

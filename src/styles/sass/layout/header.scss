@@ -1,0 +1,12 @@
+@use "../variables/v-colors.scss" as colors;
+@use "../variables/v-typografy.scss" as typografy;
+
+#header-section{
+  width: 95vw;
+  text-align: center;
+  h1{
+    color: colors.$primary-light;
+    font-family: typografy.$font-title;
+    font-size: typografy.$text-display-lg;
+  }
+}

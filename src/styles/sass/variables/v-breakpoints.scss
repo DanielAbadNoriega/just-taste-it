@@ -1,0 +1,26 @@
+$xs-mobile-breakpoint: 360px;
+$s-mobile-breakpoint: 450px;
+$mobile-breakpoint: 600px;
+$tablet-breakpoint: 768px;
+$laptop-breakpoint: 992px;
+$large-laptop-breakpoint: 1200px;
+$xl-laptop-breakpoint: 1445px;
+$xxl-laptop-breakpoint: 2000px;
+
+/* 
+
+@media screen and (min-width: media.$xs-mobile-breakpoint) {}
+
+@media screen and (min-width: media.$mobile-breakpoint) {}
+
+@media screen and (min-width: media.$tablet-breakpoint) {}
+
+@media screen and (min-width: media.$laptop-breakpoint) {}
+
+@media screen and (min-width: media.$large-laptop-breakpoint) {} 
+
+@media screen and (min-width: media.$xl-laptop-breakpoint) {} 
+
+@media screen and (min-width: media.$xxl-laptop-breakpoint) {} 
+
+*/

@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+/* STYLES */
+import "bootstrap/dist/css/bootstrap.css";
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import "bootstrap/js/src/collapse.js";
+import './styles/sass/index.scss';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

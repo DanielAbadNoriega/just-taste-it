@@ -1,0 +1,28 @@
+@use "../variables/v-colors.scss" as colors;
+@use "../variables/v-typografy.scss" as typografy;
+
+.modal-container {
+  /*   box-shadow: inset -2px -2px 20px (#b3c1dd),
+    inset 0px -10px 20px (colors.$primary-light), 1px 5px 15px (#caccde); */
+  color: colors.$primary-light;
+  font-family: typografy.$font-body-boldItalic;
+  background-image: linear-gradient(
+    to right top,
+    #004d7a,
+    #005a87,
+    #006894,
+    #0076a1,
+    #0096bc,
+    #00b8d2,
+    #30d9e4,
+    #5ffbf1
+  );
+  h1{
+    font-family: typografy.$font-title;
+    color: colors.$primary;
+  }
+  strong{
+    font-family: typografy.$font-title;
+    color: colors.$primary-4;
+  }
+}

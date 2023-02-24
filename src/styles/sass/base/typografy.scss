@@ -1,0 +1,51 @@
+@use "../variables/v-typografy.scss" as typografy;
+@use "../variables/v-breakpoints.scss" as media;
+
+h1{
+  font-size: typografy.$text-display-xs;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: media.$s-mobile-breakpoint) {
+  h1{
+    font-size: typografy.$text-display-s;
+  }
+  p,
+  ul {
+    font-size: typografy.$text-base-s;
+  }
+}
+
+@media screen and (min-width: media.$mobile-breakpoint) {
+  h1{
+    font-size: typografy.$text-display;
+  }
+  p,
+  ul {
+    font-size: typografy.$text-base;
+  }
+}
+
+@media screen and (min-width: media.$laptop-breakpoint) {
+
+}
+
+@media screen and (min-width: media.$large-laptop-breakpoint) {
+  h2 {
+    font-size: typografy.$text-headline-lg;
+  }
+  p {
+    font-size: typografy.$text-base-lg;
+  }
+}
+
+@media screen and (min-width: media.$xl-laptop-breakpoint) {
+  h2 {
+    font-size: typografy.$text-headline-xl;
+  }
+  p,
+  ul {
+    font-size: typografy.$text-base-xl;
+  }
+}

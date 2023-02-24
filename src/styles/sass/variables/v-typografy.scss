@@ -1,0 +1,73 @@
+/* FONT FAMILY */
+$font-body: OpenSans-Light, sans-serif;
+$font-body-bold: OpenSans-Bold, sans-serif;
+$font-body-boldItalic: OpenSans-BoldItalic, sans-serif;
+$font-title: OpenSans-ExtraBold, sans-serif;
+$font-html: Anthony-Hartman-Italic, "La Belle Aurore";
+
+/* FONT SIZES */
+
+/* MIN-WIDTH: 390PX */
+$text-base-xs: 12px; /* <p> */
+$text-display-xs: 18px; /* <h1> */
+
+/* MIN-WIDTH: 450PX */
+$text-base-s: 16px; /* <p> */
+$text-display-s: 24px; /* <h1> */
+
+/* MIN-WIDTH: 600PX */
+$text-caption: 12px;
+$text-note: 16px; /* etiquetas */
+$text-base: 18px; /* <p> */
+$text-subheader: 20px; /* <nav> */
+$text-title: 26px;
+$text-headline: 30px; /* <h2> */
+$text-display: 40px; /* <h1> */
+$text-jumbo: 50px;
+
+/* MIN-WIDTH: 992PX */
+$text-display-md: 56px; /* <h1> */
+
+/* MIN-WIDTH: 1200PX */
+$text-base-lg: 20px; /* <p> */
+$text-headline-lg: 56px; /* <h2> */
+$text-display-lg: 68px; /* <h1> */
+
+/* MIN-WIDTH: 1400PX */
+$text-base-xl: 22px; /* <p> */
+$text-headline-xl: 60px; /* <h2> */
+$text-display-xl: 94px; /* <h1> */
+
+$font-path-OpenSans: "../../fonts/Open_Sans/static/OpenSans/";
+$font-path-OpenSans-Condensed: "../../fonts/Open_Sans/static/OpenSans_Condensed/";
+$font-path-Anthony: "../../fonts/anthony_hartman/Anthony";
+$OpenSans-light: $font-path-OpenSans + "OpenSans-Light.ttf";
+$OpenSans-bold: $font-path-OpenSans + "OpenSans-Bold.ttf";
+$OpenSans-boldItalic: $font-path-OpenSans-Condensed + "OpenSans_Condensed-BoldItalic2.ttf";
+$OpenSans-ExtraBold: $font-path-OpenSans + "OpenSans-ExtraBold.ttf";
+$Anthony-Italic: $font-path-Anthony + "\ Hartman\ Italic.ttf";
+
+@font-face {
+  font-family: OpenSans-Light;
+  src: url($OpenSans-light);
+}
+
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url($OpenSans-bold);
+}
+
+@font-face {
+  font-family: OpenSans-BoldItalic;
+  src: url($OpenSans-bold);
+}
+
+@font-face {
+  font-family: OpenSans-Extrabold;
+  src: url($OpenSans-ExtraBold);
+}
+
+@font-face {
+  font-family: Anthony-Hartman-Italic;
+  src: url($Anthony-Italic);
+}
