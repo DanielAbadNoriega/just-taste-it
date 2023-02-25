@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals';
 
 /* STYLES */
 import "bootstrap/dist/css/bootstrap.css";
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap/dist/js/bootstrap.bundle.min'; 
+import "bootstrap-icons/font/bootstrap-icons.css"; //Icons Bootstrap
 import "bootstrap/js/src/collapse.js";
 import './styles/sass/index.scss';
 

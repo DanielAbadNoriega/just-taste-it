@@ -1,17 +1,23 @@
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+
+} from "react-router-dom";
+import HomeContainer from "./components/containers/homeContainer";
 
 /* COMPONENTS */
 import InitComponent from "./components/containers/initComponent";
 
 function App() {
-  return <Router>
-    <Routes>
-      <Route path="/"
-            element={
-             <InitComponent></InitComponent>
-            }></Route>
-    </Routes>
-  </Router>;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<InitComponent></InitComponent>}></Route>
+        <Route path="/home" element={<HomeContainer></HomeContainer>}></Route>
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

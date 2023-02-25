@@ -10,5 +10,7 @@
 /* SECTIONS */
 
 /* COMPONENTS */
+@use "components/button.scss";
 @use "components/modal.scss";
-@use "components/init.scss"
+@use "components/proyect/init.scss";
+@use "components/proyect/home.scss";
