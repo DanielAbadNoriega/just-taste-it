@@ -1,0 +1,13 @@
+@use "../variables/v-typografy.scss" as typografy;
+@use "../variables/v-colors.scss" as colors;
+
+@mixin button($color: colors.$primary-light) {
+  color: $color;
+  border: 0.1em solid $color;
+  border-radius: 5px;
+  padding: 5px 10px;
+
+  font: {
+    family: typografy.$font-body-boldItalic;
+  }
+}

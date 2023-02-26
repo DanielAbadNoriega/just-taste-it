@@ -1,11 +1,22 @@
-import './App.css';
-import Header from './components/layout/header';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+
+} from "react-router-dom";
+import HomeContainer from "./components/containers/home/homeContainer";
+
+/* COMPONENTS */
+import InitComponent from "./components/containers/init/initComponent";
 
 function App() {
   return (
-    <div className="App">
-    <Header></Header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<InitComponent></InitComponent>}></Route>
+        <Route path="/home" element={<HomeContainer></HomeContainer>}></Route>
+      </Routes>
+    </Router>
   );
 }
 

@@ -4,9 +4,13 @@
 #header-section{
   width: 95vw;
   text-align: center;
+  align-self: end;
   h1{
-    color: colors.$primary-light;
+    color: colors.$secondary-1;
     font-family: typografy.$font-title;
     font-size: typografy.$text-display-lg;
+    span{
+      color: colors.$primary-10;
+    }
   }
 }

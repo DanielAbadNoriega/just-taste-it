@@ -1,0 +1,99 @@
+@use "../../mixins/mixins.scss" as _mixins;
+@use "../../variables/v-colors.scss" as colors;
+
+.btn-basic {
+  margin: auto 1rem;
+  @include _mixins.button(colors.$secondary-1);
+  &:hover {
+    color: colors.$secondary-1;
+    border-color: colors.$primary-10;
+  }
+}
+
+.btn-signup {
+  @extend .btn-basic;
+  background-image: linear-gradient(
+    to right top,
+    #ff6347,
+    #f8784a,
+    #f28a52,
+    #eb9a5e,
+    #e5a86e,
+    #e8af6f,
+    #eab770,
+    #ecbe72,
+    #f4c361,
+    #fac94d,
+    #fdd034,
+    #ffd700
+  );
+  border: 0.1em solid transparent;
+  &:hover {
+    color: colors.$secondary-1;
+    background-image: linear-gradient(
+      to right top,
+      rgb(254, 80, 49, 0.2),
+      rgb(250, 94, 49, 0.2),
+      rgb(247, 107, 52, 0.2),
+      rgb(243, 118, 55, 0.2),
+      rgb(239, 128, 60, 0.2),
+      rgb(241, 138, 59, 0.2),
+      rgb(243, 147, 59, 0.2),
+      rgb(245, 157, 59, 0.2),
+      rgb(251, 170, 50, 0.2),
+      rgb(254, 185, 39, 0.2),
+      rgb(255, 200, 24, 0.2),
+      rgb(255, 215, 0, 0.2)
+    );
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 0.1em solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+.btn-login {
+  @extend .btn-basic;
+  color: colors.$secondary-2;
+  border-color: colors.$secondary-2;
+  &:hover {
+    color: colors.$secondary-1;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 0.1em solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+.btn-skip {
+  border: none;
+  width: 100%;
+  color: colors.$secondary-4;
+  &:hover {
+    color: goldenrod;
+    text-decoration: underline;
+  }
+}
+
+#food-button-section {
+  width: 200px;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 0.1em solid rgba(255, 255, 255, 0.1);
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    img{
+      filter: brightness(105%);
+    }
+  }
+  img {
+    border-radius: 5px;
+  }
+}
