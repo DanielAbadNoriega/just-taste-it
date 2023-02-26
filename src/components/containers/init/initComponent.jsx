@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../layout/header";
+import Header from "../../layout/header";
 
 const InitComponent = () => {
 

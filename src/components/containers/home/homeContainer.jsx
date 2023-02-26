@@ -1,5 +1,7 @@
 import React from "react";
-import Header from "../layout/header";
+import Header from "../../layout/header";
+import FoodMenuContainer from "../foodContainer/foodMenuContainer";
+
 
 const HomeContainer = () => {
   return (
@@ -10,6 +12,7 @@ const HomeContainer = () => {
         offer something for everyone, from classic favorites to exciting new
         creations.
       </p>
+      <FoodMenuContainer></FoodMenuContainer>
       <div className="home-btn-container">
         <button className="btn btn-basic">ORDER NOW</button>
         <button className="btn btn-basic">VIEW MORE</button>

@@ -10,7 +10,12 @@
 /* SECTIONS */
 
 /* COMPONENTS */
-@use "components/button.scss";
-@use "components/modal.scss";
+  
+  /* PURE */
+@use "components/pure/button.scss";
+@use "components/pure/modal.scss";
+
+  /* PROYECT */
 @use "components/proyect/init.scss";
 @use "components/proyect/home.scss";
+@use "components/proyect/foodContainer.scss";

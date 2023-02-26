@@ -4,10 +4,10 @@ import {
   Routes,
 
 } from "react-router-dom";
-import HomeContainer from "./components/containers/homeContainer";
+import HomeContainer from "./components/containers/home/homeContainer";
 
 /* COMPONENTS */
-import InitComponent from "./components/containers/initComponent";
+import InitComponent from "./components/containers/init/initComponent";
 
 function App() {
   return (
