@@ -4,8 +4,13 @@
 h1 {
   font-size: typografy.$text-display-xs;
 }
-.btn-custom {
-  font-size: typografy.$text-base-xs;
+.btn-basic {
+  h3 {
+    font-size: typografy.$text-display-xs;
+  }
+  p {
+    font-size: typografy.$text-base-xs;
+  }
 }
 
 /* MEDIA QUERIES */
@@ -18,8 +23,13 @@ h1 {
   ul {
     font-size: typografy.$text-base-s;
   }
-  .btn-custom {
-    font-size: typografy.$text-base-s;
+  .btn-basic {
+    h3 {
+      font-size: typografy.$text-display-s;
+    }
+    p {
+      font-size: typografy.$text-base-s;
+    }
   }
 }
 
@@ -28,27 +38,36 @@ h1 {
     font-size: typografy.$text-display;
   }
   p,
-  ul{
+  ul {
     font-size: typografy.$text-base;
   }
-  .btn-custom {
-    font-size: typografy.$text-base;
+  .btn-basic {
+    h3 {
+      font-size: typografy.$text-title;
+    }
+    p {
+      font-size: typografy.$text-base;
+    }
   }
 }
 
 @media screen and (min-width: media.$laptop-breakpoint) {
-
 }
 
 @media screen and (min-width: media.$large-laptop-breakpoint) {
   h2 {
     font-size: typografy.$text-headline-lg;
   }
-  p{
+  p {
     font-size: typografy.$text-base-lg;
   }
-  .btn-custom {
-    font-size: typografy.$text-base-lg;
+  .btn-basic {
+    h3 {
+      font-size: typografy.$text-title-md;
+    }
+    p {
+      font-size: typografy.$text-base-lg;
+    }
   }
 }
 
@@ -57,10 +76,15 @@ h1 {
     font-size: typografy.$text-headline-xl;
   }
   p,
-  ul{
+  ul {
     font-size: typografy.$text-base-xl;
   }
-  .btn-custom {
-    font-size: typografy.$text-base-xl;
+  .btn-basic {
+    h3 {
+      font-size: typografy.$text-title-lg;
+    }
+    p {
+      font-size: typografy.$text-base-xl;
+    }
   }
 }

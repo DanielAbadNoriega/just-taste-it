@@ -10,13 +10,20 @@
 /* SECTIONS */
 
 /* COMPONENTS */
-  
-  /* PURE */
+
+/* CONTAINERS */
+@use "components/containers/foodHomeContainer.scss";
+
+/* PURE */
 @use "components/pure/button.scss";
 @use "components/pure/modal.scss";
 
-  /* PROYECT */
-@use "components/proyect/init.scss";
-@use "components/proyect/home.scss";
-@use "components/proyect/foodContainer.scss";
-@use "components/proyect/americanContainer.scss";
+/* PROYECT */
+
+/* PAGES */
+@use "components/proyect/pages/init.scss";
+@use "components/proyect/pages/home.scss";
+@use "components/proyect/pages/americanContainer.scss";
+@use "components/proyect/pages/japaneseContainer.scss";
+@use "components/proyect/pages/italianContainer.scss";
+@use "components/proyect/pages/turkishContainer.scss";
