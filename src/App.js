@@ -4,6 +4,7 @@ import {
   Routes,
 
 } from "react-router-dom";
+import AmericanContainer from "./components/containers/americanContainer/americanContainer";
 import HomeContainer from "./components/containers/home/homeContainer";
 
 /* COMPONENTS */
@@ -15,6 +16,10 @@ function App() {
       <Routes>
         <Route path="/" element={<InitComponent></InitComponent>}></Route>
         <Route path="/home" element={<HomeContainer></HomeContainer>}></Route>
+        <Route path="/american" element={<AmericanContainer></AmericanContainer>}></Route>
+        <Route path="/japanese" element={<HomeContainer></HomeContainer>}></Route>
+        <Route path="/italian" element={<HomeContainer></HomeContainer>}></Route>
+        <Route path="/turkish" element={<HomeContainer></HomeContainer>}></Route>
       </Routes>
     </Router>
   );

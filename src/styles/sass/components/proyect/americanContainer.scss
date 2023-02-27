@@ -1,0 +1,19 @@
+@use "../../variables/v-colors.scss" as colors;
+@use "../../variables/v-typografy.scss" as typografy;
+
+#american-section {
+  height: 100vh;
+  background: url("../../../../assets/images/backgrounds/bg_american.jpeg")
+    center;
+  background: {
+    size: cover;
+    repeat: no-repeat;
+    attachment: fixed;
+  }
+  h1 {
+    color: colors.$secondary-1;
+    font-family: typografy.$font-title;
+    font-size: typografy.$text-display-lg;
+    text-align: center;
+  }
+}
