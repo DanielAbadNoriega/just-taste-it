@@ -6,8 +6,41 @@
   border: 0.1em solid $color;
   border-radius: 5px;
   padding: 5px 10px;
-
   font: {
     family: typografy.$font-body-boldItalic;
+  }
+}
+
+@mixin glassmorphism($boxShadow: "rgba(0, 0, 0, 0.1)") {
+  box-shadow: 0 4px 30px $boxShadow;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+@mixin food-header() {
+padding-bottom: 1rem;
+  background: {
+    size: cover;
+    repeat: no-repeat;
+    attachment: fixed;
+    position: center;
+  }
+  h1 {
+    color: colors.$secondary-1;
+    font-family: typografy.$font-title;
+    font-size: typografy.$text-display-lg;
+    text-align: center;
+  }
+
+  p {
+    color: colors.$secondary-1;
+    font-family: typografy.$font-title;
+    text-align: center;
+  }
+  q {
+    &::after,
+    &::before {
+      color: colors.$primary-10;
+    }
   }
 }

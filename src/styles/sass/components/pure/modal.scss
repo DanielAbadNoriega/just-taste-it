@@ -17,12 +17,40 @@
     #30d9e4,
     #5ffbf1
   );
-  h1{
+  h1 {
     font-family: typografy.$font-title;
     color: colors.$primary;
   }
-  strong{
+  strong {
     font-family: typografy.$font-title;
     color: colors.$primary-4;
+  }
+}
+
+#modal-section {
+  h3 {
+    color: colors.$primary-10;
+    font-family: typografy.$font-title;
+  }
+  .modal-content-food {
+    background: rgba(255, 255, 255);
+    box-shadow: inset 2px -5px 5px rgba(0, 0, 0, 0.3),
+      inset -2px -2px 2px (#d5d6d8);
+    border: none;
+    .modal-body {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+      img {
+        width: 30%;
+        border-radius: 5px;
+      }
+      p {
+        text-align: start;
+        margin: auto auto;
+        color: colors.$primary-7;
+      }
+    }
   }
 }

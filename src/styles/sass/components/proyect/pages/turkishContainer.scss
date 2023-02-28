@@ -1,0 +1,7 @@
+@use "../../../variables/v-colors.scss" as colors;
+@use "../../../variables/v-typografy.scss" as typografy;
+@use "../../../mixins/mixins.scss" as _mixins;
+
+#turkish-section {
+  @include _mixins.food-header();
+}
