@@ -37,6 +37,15 @@ import napoletana from "../assets/images/icons/menu_italian/napoletana.jpg";
 import prosciutto from "../assets/images/icons/menu_italian/prosciutto.jpg";
 import quattro_stagioni from "../assets/images/icons/menu_italian/quattro_stagioni.jpg";
 
+/* MENU_TURKISH */
+import adana from "../assets/images/icons/menu_turkish/adana.jpg";
+import baklava from "../assets/images/icons/menu_turkish/baklava.jpg";
+import iskender from "../assets/images/icons/menu_turkish/iskender.jpg";
+import kofte from "../assets/images/icons/menu_turkish/kofte.jpg";
+import lahmacun from "../assets/images/icons/menu_turkish/lahmacun.jpg";
+import manti from "../assets/images/icons/menu_turkish/manti.jpg";
+import pide from "../assets/images/icons/menu_turkish/pide.jpg";
+
 export const FOOD_TIPES = [
   {
     img: american_food_icon,
@@ -200,43 +209,43 @@ export const FOOD_TIPES = [
         name: "Adana Kebab",
         description:
           "This dish is made from minced lamb meat, red bell pepper paste, onion, garlic, salt, and pepper. It is usually served with flatbread and grilled vegetables.",
-        img: margherita,
+        img: adana,
       },
       1: {
         name: "Manti",
         description:
           "A type of Turkish dumpling filled with minced lamb, onion, garlic, salt, and pepper. It is typically served with yoghurt, tomato sauce, and melted butter.",
-        img: marinara,
+        img: manti,
       },
       2: {
         name: "Iskender Kebab",
         description:
           "Thinly sliced lamb meat served on a bed of pita bread, topped with tomato sauce and melted butter. It is typically served with yoghurt and grilled vegetables.",
-        img: quattro_stagioni,
+        img: iskender,
       },
       3: {
         name: "Lahmacun",
         description:
           "A thin, crispy flatbread topped with minced lamb, onion, tomato, red bell pepper, parsley, and a mixture of spices including cumin, paprika, and chili flakes.",
-        img: capricciosa,
+        img: lahmacun,
       },
       4: {
         name: "Pide",
         description:
           "A Turkish version of pizza, typically topped with cheese, minced lamb, onion, and egg. Other toppings can include sucuk (Turkish sausage), spinach, or ground beef.",
-        img: prosciutto,
+        img: pide,
       },
       5: {
         name: "Kofte",
         description:
           "A type of meatball made from minced lamb or beef, onion, garlic, parsley, salt, and pepper. It is typically served with bulgur pilaf, grilled vegetables, and a side salad.",
-        img: diavola,
+        img: kofte,
       },
       6: {
         name: "Baklava",
         description:
           "A sweet pastry made with layers of phyllo dough, chopped nuts (usually pistachios or walnuts), and a sweet syrup made from sugar, water, and lemon juice.",
-        img: napoletana,
+        img: baklava,
       },
     },
   },
