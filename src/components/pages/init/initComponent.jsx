@@ -1,13 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../../layout/header";
-import background from "../../../assets/images/backgrounds/msgBgDark.jpg";
+import background_colorful from "../../../assets/images/backgrounds/bg_colorful.jpg";
+/* import background from "../../../assets/images/backgrounds/msgBgDark.jpg"; */
 
 const InitComponent = () => {
   const navigate = useNavigate();
 
   let body = document.getElementsByTagName("body")[0];
-  body.style.backgroundImage = `url(${background})`;
+  body.style.backgroundImage = `url(${background_colorful})`;
 
   const goTo = (path) => {
     navigate(path);

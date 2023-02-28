@@ -18,7 +18,7 @@
 }
 
 @mixin food-header() {
-  height: 100vh;
+padding-bottom: 1rem;
   background: {
     size: cover;
     repeat: no-repeat;
@@ -35,7 +35,6 @@
   p {
     color: colors.$secondary-1;
     font-family: typografy.$font-title;
-    /*     font-size: typografy.$text-display-s; */
     text-align: center;
   }
   q {

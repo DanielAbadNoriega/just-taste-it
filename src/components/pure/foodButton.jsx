@@ -1,10 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const FoodButton = ({ img, name, description, direction, path, goTo }) => {
-
+const FoodButton = ({
+  img,
+  name,
+  description,
+  direction,
+  path,
+  goTo,
+}) => {
   return (
     <button
+      type="button"
       id="food-button-section"
       className={`btn-basic food-button-container ${direction}-button`}
       onClick={() => goTo(path)}
@@ -22,6 +29,7 @@ FoodButton.propTypes = {
   description: PropTypes.string.isRequired,
   path: PropTypes.string,
   goTo: PropTypes.func,
+  modal: PropTypes.bool,
 };
 
 export default FoodButton;

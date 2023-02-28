@@ -4,9 +4,9 @@
 h1 {
   font-size: typografy.$text-display-xs;
 }
-.btn-basic {
+#modal-section, .btn-basic {
   h3 {
-    font-size: typografy.$text-display-xs;
+    font-size: typografy.$text-display-xs !important;
   }
   p {
     font-size: typografy.$text-base-xs;
@@ -23,9 +23,9 @@ h1 {
   ul {
     font-size: typografy.$text-base-s;
   }
-  .btn-basic {
+  #modal-section, .btn-basic {
     h3 {
-      font-size: typografy.$text-display-s;
+      font-size: typografy.$text-display-s !important;
     }
     p {
       font-size: typografy.$text-base-s;
@@ -41,9 +41,9 @@ h1 {
   ul {
     font-size: typografy.$text-base;
   }
-  .btn-basic {
+  #modal-section, .btn-basic {
     h3 {
-      font-size: typografy.$text-title;
+      font-size: typografy.$text-title !important;
     }
     p {
       font-size: typografy.$text-base;
@@ -61,9 +61,9 @@ h1 {
   p {
     font-size: typografy.$text-base-lg;
   }
-  .btn-basic {
+  #modal-section, .btn-basic {
     h3 {
-      font-size: typografy.$text-title-md;
+      font-size: typografy.$text-title-md !important;
     }
     p {
       font-size: typografy.$text-base-lg;
@@ -79,9 +79,9 @@ h1 {
   ul {
     font-size: typografy.$text-base-xl;
   }
-  .btn-basic {
+  #modal-section, .btn-basic {
     h3 {
-      font-size: typografy.$text-title-lg;
+      font-size: typografy.$text-title-lg !important;
     }
     p {
       font-size: typografy.$text-base-xl;
