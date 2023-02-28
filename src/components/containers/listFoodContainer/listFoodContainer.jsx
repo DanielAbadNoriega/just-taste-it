@@ -1,10 +1,16 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { FOOD_TIPES } from "../../../models/data";
 import FoodButton from "../../pure/foodButton";
 
 const ListFoodContainer = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const goTo = (path) => {
+    navigate(path);
+  }
+
   const [foodData] = FOOD_TIPES.filter(
     (food) => food.path === location.pathname
   );
@@ -25,6 +31,8 @@ const ListFoodContainer = () => {
       <p>
         <q>{description}</q>
       </p>
+      <button className="btn btn-danger btn-lg-danger mx-2" onClick={() => goTo("/home")}> HOME </button>
+      <button className="btn btn-primary btn-lg-primary" onClick={() => goTo("/")}> INIT </button>
       {
         foodData?.menu ? (Object.values(menu).map((item, index) => (
         <FoodButton

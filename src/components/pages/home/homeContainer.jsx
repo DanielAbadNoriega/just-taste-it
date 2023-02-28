@@ -1,8 +1,12 @@
 import React from "react";
 import Header from "../../layout/header";
 import FoodHomeContainer from "../../containers/foodHomeContainer/foodHomeContainer";
+import background from "../../../assets/images/backgrounds/msgBgDark.jpg";
 
 const HomeContainer = () => {
+  let body = document.getElementsByTagName("body")[0];
+  body.style.backgroundImage = `url(${background})`;
+
   return (
     <div id="home-section" className="home-container">
       <Header></Header>
