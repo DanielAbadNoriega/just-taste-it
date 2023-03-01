@@ -4,7 +4,12 @@
 h1 {
   font-size: typografy.$text-display-xs;
 }
-#modal-section, .btn-basic {
+p {
+  font-size: typografy.$text-base-xs;
+}
+
+#modal-section,
+.btn-basic {
   h3 {
     font-size: typografy.$text-display-xs !important;
   }
@@ -23,7 +28,8 @@ h1 {
   ul {
     font-size: typografy.$text-base-s;
   }
-  #modal-section, .btn-basic {
+  #modal-section,
+  .btn-basic {
     h3 {
       font-size: typografy.$text-display-s !important;
     }
@@ -41,7 +47,8 @@ h1 {
   ul {
     font-size: typografy.$text-base;
   }
-  #modal-section, .btn-basic {
+  #modal-section,
+  .btn-basic {
     h3 {
       font-size: typografy.$text-title !important;
     }
@@ -61,7 +68,8 @@ h1 {
   p {
     font-size: typografy.$text-base-lg;
   }
-  #modal-section, .btn-basic {
+  #modal-section,
+  .btn-basic {
     h3 {
       font-size: typografy.$text-title-md !important;
     }
@@ -79,12 +87,17 @@ h1 {
   ul {
     font-size: typografy.$text-base-xl;
   }
-  #modal-section, .btn-basic {
-    h3 {
-      font-size: typografy.$text-title-lg !important;
-    }
+  #modal-section,
+  .btn-basic {
+    
     p {
       font-size: typografy.$text-base-xl;
+    }
+  }
+  
+  .horizontal-button {
+    h3 {
+      font-size: typografy.$text-title-lg !important;
     }
   }
 }

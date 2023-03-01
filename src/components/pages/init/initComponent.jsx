@@ -1,11 +1,14 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Header from "../../layout/header";
 import background_colorful from "../../../assets/images/backgrounds/bg_colorful.jpg";
 /* import background from "../../../assets/images/backgrounds/msgBgDark.jpg"; */
 
 const InitComponent = () => {
+  const location = useLocation();
   const navigate = useNavigate();
+
+  console.log("[ Init Component ] Location: ", location.pathname);
 
   let body = document.getElementsByTagName("body")[0];
   body.style.backgroundImage = `url(${background_colorful})`;
