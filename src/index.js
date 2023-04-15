@@ -1,22 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
 /* STYLES */
-
 import "bootstrap/dist/css/bootstrap.css";
-import 'bootstrap/dist/js/bootstrap.bundle.min'; 
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import "bootstrap/js/src/collapse.js";
 import "bootstrap-icons/font/bootstrap-icons.css"; //Icons Bootstrap
-import './styles/sass/index.scss';
+import "./styles/sass/index.scss";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// REDUX
+import { Provider } from "react-redux";
+
+// STORE
+import { chartStore } from "./store/config/storeConfig";
+import { setFood } from "./store/actions/chartActions";
+
+const chartAppStore = chartStore();
+chartAppStore.subscribe(() =>
+  console.log("[ noteAppStore ] State: ", chartAppStore.getState())
+);
+
+chartAppStore.dispatch(setFood({name:"burger Troll"}));
+chartAppStore.dispatch(setFood({name:"burger chicken"}));
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Provider store={chartAppStore}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -17,7 +17,6 @@ const ListFoodContainer = () => {
   );
   const { description, name, menu, background } = foodData;
   const path = foodData.path.split("/")[1];
-  /*   let direction = "horizontal"; */
 
   let body = document.getElementsByTagName("body")[0];
   body.style.backgroundImage = `url(${background})`;

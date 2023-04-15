@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Modal = ({ name, img, description }) => {
 
@@ -47,5 +48,11 @@ const Modal = ({ name, img, description }) => {
     </div>
   );
 };
+
+Modal.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+}
 
 export default Modal;
