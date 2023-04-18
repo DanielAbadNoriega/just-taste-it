@@ -21,9 +21,9 @@ const ListFoodContainer = () => {
   let body = document.getElementsByTagName("body")[0];
   body.style.backgroundImage = `url(${background})`;
 
-  console.log("[ ListFood ] Estamos en: ", path);
+/*   console.log("[ ListFood ] Estamos en: ", path);
   console.log("[ ListFood ] foodData: ", foodData);
-  console.log("[ ListFood ] foodData: ", menu);
+  console.log("[ ListFood ] foodData: ", menu); */
 
   return (
     <div
@@ -47,20 +47,18 @@ const ListFoodContainer = () => {
 
       {foodData?.menu
         ? Object.values(menu).map((item, index) => (
-            <>
+            <div key={index}>
               <ModalButton
-                key={index}
                 name={item.name}
                 description={item.description}
                 img={item.img}
               ></ModalButton>
               <Modal
-                key={index}
                 name={item.name}
                 description={item.description}
                 img={item.img}
               ></Modal>
-            </>
+            </div>
           ))
         : ""}
     </div>

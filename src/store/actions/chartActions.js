@@ -1,4 +1,5 @@
 export const SET_FOOD = "SET_FOOD";
+export const DELETE_FOOD = "DELETE_FOOD";
 
 export const setFood = (food) => {
   return {
@@ -6,3 +7,10 @@ export const setFood = (food) => {
     payload: { food },
   };
 };
+
+export const deleteFood = (id) => {
+  return {
+    type: DELETE_FOOD,
+    payload: {id}
+  }
+}

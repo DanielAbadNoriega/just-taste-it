@@ -16,15 +16,11 @@ import { Provider } from "react-redux";
 
 // STORE
 import { chartStore } from "./store/config/storeConfig";
-import { setFood } from "./store/actions/chartActions";
 
 const chartAppStore = chartStore();
 chartAppStore.subscribe(() =>
   console.log("[ noteAppStore ] State: ", chartAppStore.getState())
 );
-
-chartAppStore.dispatch(setFood({name:"burger Troll"}));
-chartAppStore.dispatch(setFood({name:"burger chicken"}));
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

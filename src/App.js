@@ -9,12 +9,14 @@ import HomeContainer from "./components/pages/home/homeContainer";
 
 /* COMPONENTS */
 import InitComponent from "./components/pages/init/initComponent";
+import ChartContainer from "./components/containers/chartContainer/chartContainer";
 
 function App() {
 
   return (
     <Router>
       <Navbar></Navbar>
+      <ChartContainer></ChartContainer>
       <Routes>
         <Route path="/" element={<InitComponent></InitComponent>}></Route>
         <Route path="/home" element={<HomeContainer></HomeContainer>}></Route>
@@ -35,6 +37,7 @@ function App() {
           element={<ListFoodContainer></ListFoodContainer>}
         ></Route>
       </Routes>
+
     </Router>
   );
 }
