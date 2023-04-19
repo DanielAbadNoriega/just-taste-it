@@ -8,34 +8,45 @@ const Navbar = () => {
 
   return (
     <nav className="navbar sticky-top navbar-container">
-      <button className="nav-toggle" onClick={() => setShowLinks(!showLinks)}>
+      {/* TOGGLE BUTTON */}
+      <button
+        className="nav-toggle btn-basic btn-signup"
+        onClick={() => setShowLinks(!showLinks)}
+      >
         <i className="navbar-toggler-icon"></i>
       </button>
+
+      {/* LOGO */}
       <NavLink to="/home" className="nav-brand">
         <img src={logo} alt="DAN logo" width="40" />
       </NavLink>
+
+      {/* MAIN LINKS */}
       <div className="nav-links" id={showLinks ? "show-nav" : ""}>
         <NavLink to="/home" className="nav-link">
-          <i className="bi bi-house-fill">HOME</i>
+          <i className="bi bi-house-fill"></i>
+          HOME
         </NavLink>
         <NavLink to="/signup" className="nav-link">
-          <i className="bi bi-person-fill-add">SIGNUP</i>
+          <i className="bi bi-person-fill-add"></i>SIGNUP
         </NavLink>
         <NavLink to="/login" className="nav-link">
-          <i className="bi bi-box-arrow-in-right">LOGIN</i>
+          <i className="bi bi-box-arrow-in-right"></i>LOGIN
         </NavLink>
-        <div className="dropdown bg-light " style={{width: "200px"}}>
-          <NavLink
-            to="/chart"
-            className="nav-link dropdown-toggle"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-          <i className="bi bi-basket3-fill">CHART</i>
-            <ChartContainer></ChartContainer>
-          </NavLink>
-        </div>
+      </div>
+
+      {/* CHART */}
+      <div className="dropdown chart-link-container">
+        <NavLink
+          to="/chart"
+          className="nav-link dropdown-toggle chart-nav-link"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i className="bi bi-basket3-fill"></i>
+          <ChartContainer></ChartContainer>
+        </NavLink>
       </div>
     </nav>
   );
