@@ -3,12 +3,13 @@ export const INCREMENT_FOOD = "INCREMENT_FOOD";
 export const DECREMENT_FOOD = "DECREMENT_FOOD";
 export const DELETE_FOOD = "DELETE_FOOD";
 
-export const setFood = ({ name, img }) => {
+export const setFood = ({ name, img, price }) => {
   return {
     type: SET_FOOD,
     payload: {
       name,
       img,
+      price
     },
   };
 };

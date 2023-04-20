@@ -1,13 +1,15 @@
+@use "../../../variables/v-colors.scss" as colors;
+
 #chart-container {
-  width: 45vw;
+  width: 60vw;
   max-width: 400px;
   padding: 0;
-  background-color: transparent;
+  background-color: colors.$secondary-1;
   white-space: normal;
   left: auto;
   .card-chart {
-    width: 100%;
     height: 170px;
+    margin: .5rem;
     padding: .5rem;
     display: flex;
     flex-wrap: wrap;
@@ -28,13 +30,31 @@
       text-align: end;
       p{
         margin-bottom: 0;
+        font-weight: bold;
       }
-      .card-chart-cuantity {
+      .card-chart-cuantity-container{
         display: flex;
         align-items: center;
-        justify-content: center;
-        p {
-          margin: 0.5rem;
+        justify-content: flex-end;
+        width: 100%;
+        i{
+          font-size: 1.2rem;
+        }
+        .card-chart-cuantity {
+          padding: 3px 6px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: .1rem solid colors.$primary-6;
+          background-color: colors.$primary-1;
+          border-radius: 5px;
+          i{
+            font-size: 1.2rem;
+          }
+          p {
+            margin: 0.5rem;
+            font-weight: bold;
+          }
         }
       }
     }

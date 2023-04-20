@@ -59,42 +59,49 @@ export const FOOD_TIPES = [
         description:
           "1/3 lb. all beef patty, mayo, lettuce, tomato, and onion. May be ordered with or without cheese or bacon.",
         img: big_pal,
+        price: 9.50,
       },
       1: {
         name: "Double Big Pal",
         description:
           "Two 1/3 lb. all beef patties, mayo, lettuce tomato and onion. May be ordered with or without cheese or bacon.",
         img: double_big_pal,
+        price: 9.50,
       },
       2: {
         name: "Chili Burger",
         description:
           "1/3 lb. all beef patty, chili, cheese and onions. May be ordered with or without cheese or bacon.",
         img: chili_burger,
+        price: 11.50,
       },
       3: {
         name: "Double Beef Burger",
         description:
           "Two all beef patties, cheese, mayo, lettuce, tomato and onion. May be ordered with or without cheese or bacon.",
         img: double_beef_burger,
+        price: 14.50,
       },
       4: {
         name: "Western Bacon BBQ",
         description:
           "Rustle up your hunger for this burger made with 100% pure lean beef, fresh ground and grilled to perfection, topped with BBQ sauce, two onion rings, lettuce, tomato, bacon and Swiss cheese on a toasted sponge-dough bun.",
         img: western_beacon_bbq,
+        price: 13.50,
       },
       5: {
         name: "Island Burger",
         description:
           "This tasty burger’s got tang featuring 100% pure lean beef, fresh ground and grilled to perfection topped with thousand island dressing, lettuce, tomato and American cheese on a toasted sponge-dough bun.",
         img: island_burger,
+        price: 9.50,
       },
       6: {
         name: "Impossible Burger",
         description:
           "A delicious burger made entirely from plants for people who love meat. Standard kitchen operations involve shared cooking and preparation areas where cross-contact with other foods and allergens may occur. Cross contaminants include, but are not limited to: poultry, beef, dairy, gluten, etc. Fatburger is not a certified vegan restaurant.",
         img: imposible_burger,
+        price: 14.50,
       },
     },
   },
@@ -110,42 +117,49 @@ export const FOOD_TIPES = [
         description:
           "Vegan crispy style, avocado, sweet potato, scallions, vegan creme cheese, topped with vegan spicy mayo & vegan eel sauce.",
         img: salmon_maki,
+        price: 13.50,
       },
       1: {
         name: "Butter Maki",
         description:
           "Cucumber, crispy onions, avocado, scallions, vegan creme cheese, topped with avocado, vegan mayo cilantro & sesame seeds.",
         img: butter_maki,
+        price: 9.50,
       },
       2: {
         name: "Tuna Maki",
         description:
           "Asparagus, avocado, tofu tempura, scallions, vegan creme cheese, topped with crispy onions, vegan spicy mayo & sesame seeds.",
         img: tuna_maki,
+        price: 11.50,
       },
       3: {
         name: "Ebi Maki",
         description:
           "Sweet potatoes, asparagus, avocado, vegan creme cheese, topped with seaweed salad & sesame seeds.",
         img: ebi_maki,
+        price: 10.50,
       },
       4: {
         name: "Hanami",
         description:
           "Sun dried tomatoes, basil, scallions, vegan creme cheese, roasted bell peppers, topped with vegan parmesan cheese.",
         img: hanami,
+        price: 9.50,
       },
       5: {
         name: "Shoft Shell Roll",
         description:
           "Tempura watercraft, tofu tempura teriyaki style, scallions, topped with vegan mayo wasabi & teriyaki sauce.",
         img: shoft_shell_roll,
+        price: 12.50,
       },
       6: {
         name: "Bata Furabe",
         description:
           "Mango, avocado, sweet plantains, vegan creme cheese, topped with sliced almonds, toasted coconut & vegan eel sauce.",
         img: bata_furabe,
+        price: 14.50,
       },
     },
   },
@@ -160,41 +174,48 @@ export const FOOD_TIPES = [
         name: "Margherita",
         description: "Tomato sauce, mozzarella cheese, and basil.",
         img: margherita,
+        price: 12.50,
       },
       1: {
         name: "Marinara",
         description:
           "Tomato sauce, garlic, oregano, and extra-virgin olive oil.",
         img: marinara,
+        price: 13.50,
       },
       2: {
         name: "Quattro Stagioni",
         description:
           "Tomato sauce, mozzarella cheese, mushrooms, artichokes, olives, and ham.",
         img: quattro_stagioni,
+        price: 13.50,
       },
       3: {
         name: "Capricciosa",
         description:
           "Tomato sauce, mozzarella cheese, mushrooms, artichokes, olives, ham, and boiled eggs",
         img: capricciosa,
+        price: 11.50,
       },
       4: {
         name: "Prosciutto e Funghi",
         description: "Tomato sauce, mozzarella cheese, ham, and mushrooms.",
         img: prosciutto,
+        price: 11.50,
       },
       5: {
         name: "Diavola",
         description:
           "Tomato sauce, mozzarella cheese, spicy salami, and hot chili peppers.",
         img: diavola,
+        price: 10.50,
       },
       6: {
         name: "Napoletana",
         description:
           "Tomato sauce, mozzarella cheese, anchovies, capers, and oregano.",
         img: napoletana,
+        price: 13.50,
       },
     },
   },
@@ -210,42 +231,49 @@ export const FOOD_TIPES = [
         description:
           "This dish is made from minced lamb meat, red bell pepper paste, onion, garlic, salt, and pepper. It is usually served with flatbread and grilled vegetables.",
         img: adana,
+        price: 12.50,
       },
       1: {
         name: "Manti",
         description:
           "A type of Turkish dumpling filled with minced lamb, onion, garlic, salt, and pepper. It is typically served with yoghurt, tomato sauce, and melted butter.",
         img: manti,
+        price: 12.50,
       },
       2: {
         name: "Iskender Kebab",
         description:
           "Thinly sliced lamb meat served on a bed of pita bread, topped with tomato sauce and melted butter. It is typically served with yoghurt and grilled vegetables.",
         img: iskender,
+        price: 13.50,
       },
       3: {
         name: "Lahmacun",
         description:
           "A thin, crispy flatbread topped with minced lamb, onion, tomato, red bell pepper, parsley, and a mixture of spices including cumin, paprika, and chili flakes.",
         img: lahmacun,
+        price: 14.50,
       },
       4: {
         name: "Pide",
         description:
           "A Turkish version of pizza, typically topped with cheese, minced lamb, onion, and egg. Other toppings can include sucuk (Turkish sausage), spinach, or ground beef.",
         img: pide,
+        price: 12.50,
       },
       5: {
         name: "Kofte",
         description:
           "A type of meatball made from minced lamb or beef, onion, garlic, parsley, salt, and pepper. It is typically served with bulgur pilaf, grilled vegetables, and a side salad.",
         img: kofte,
+        price: 12.50,
       },
       6: {
         name: "Baklava",
         description:
           "A sweet pastry made with layers of phyllo dough, chopped nuts (usually pistachios or walnuts), and a sweet syrup made from sugar, water, and lemon juice.",
         img: baklava,
+        price: 13.50,
       },
     },
   },

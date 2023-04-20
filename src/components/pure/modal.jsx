@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
 import { setFood } from "../../store/actions/chartActions";
 
-const Modal = ({ name, img, description }) => {
+const Modal = ({ name, img, description, price }) => {
   const dispatch = useDispatch();
 
   const nameModal = name.replace(/\s/g, "");
 
   const addToChart = () => {
-    dispatch(setFood({ name, img }));
+    dispatch(setFood({ name, img, price }));
   };
 
   return (
@@ -41,16 +41,15 @@ const Modal = ({ name, img, description }) => {
             <img src={img} alt={description} />
             <p>{description}</p>
           </div>
+
           <div className="modal-footer">
             <button
               type="button"
-              className="btn btn-danger"
-              data-bs-dismiss="modal"
+              className="btn btn-success"
+              onClick={addToChart}
             >
-              Close
-            </button>
-            <button type="button" className="btn btn-success" onClick={addToChart}>
-              BUY
+              <i className="bi bi-cart-plus-fill"></i>
+              {price}€
             </button>
           </div>
         </div>

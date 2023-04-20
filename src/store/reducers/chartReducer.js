@@ -18,13 +18,14 @@ let randomId = () => {
   return newId;
 }; */
 
-const setStateChart = (state, { name, img }) => {
+const setStateChart = (state, { name, img, price }) => {
   if (state.length === 0) {
     let newState = [
       ...state,
       {
         name,
         img,
+        price,
         num: 1,
       },
     ];
@@ -48,6 +49,7 @@ const setStateChart = (state, { name, img }) => {
         {
           name,
           img,
+          price,
           num: 1,
         },
       ]);
@@ -59,8 +61,7 @@ const incrementFood = (state, name) => {
   let newState = JSON.stringify(state.map((food) =>
     food.name === name
       ? {
-          name: food.name,
-          img: food.img,
+          ...food,
           num: food.num + 1,
         }
       : food

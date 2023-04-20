@@ -57,6 +57,7 @@ const ListFoodContainer = () => {
                 name={item.name}
                 description={item.description}
                 img={item.img}
+                price={item.price}
               ></Modal>
             </div>
           ))
