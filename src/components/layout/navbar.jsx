@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="navbar sticky-top navbar-container">
       {/* TOGGLE BUTTON */}
       <button
-        className="nav-toggle btn-basic btn-signup"
+        className="btn-basic nav-toggle btn-toggle"
         onClick={() => setShowLinks(!showLinks)}
       >
         <i className="navbar-toggler-icon"></i>
@@ -36,13 +36,16 @@ const Navbar = () => {
       </div>
 
       {/* CHART */}
-      <div className="dropdown chart-link-container">
+      <div
+        className="dropdown chart-link-container"
+      >
         <NavLink
           to="/chart"
           className="nav-link dropdown-toggle chart-nav-link"
           role="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
+          data-bs-auto-close="false"
         >
           <i className="bi bi-basket3-fill"></i>
           <ChartContainer></ChartContainer>

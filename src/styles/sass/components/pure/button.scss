@@ -78,6 +78,20 @@
   }
 }
 
+.btn-toggle{
+  @extend .btn-signup;
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .navbar-toggler-icon{
+    width: 30px;
+    height: 30px;
+  }
+}
+
 #food-button-section {
   padding: .5rem;
   background: rgba(255, 255, 255, 0);

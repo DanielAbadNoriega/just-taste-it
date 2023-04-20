@@ -1,38 +1,28 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import FoodChart from "../../pure/foodChart";
+import EmptyChartCard from "../../pure/emptyChartCard";
 
 const ChartContainer = () => {
   const chart = useSelector((state) => {
-    const counts = {};
-    for (let i = 0; i < state.length; i++) {
-      const item = state[i];
-      counts[item.name] = counts[item.name] ? counts[item.name] + 1 : 1;
-    }
-
-    const result = [];
-    for (const name in counts) {
-      result.push({
-        name: name,
-        img: state.find((x) => x.name === name).img,
-        num: counts[name],
-      });
-    }
     console.log(`[ ChartContainer ] State: `);
     console.table(state);
-    console.log(`[ ChartContainer ] Result: `);
-    console.table(result);
 
-    return result;
+    return state;
   });
 
+  const emptyStyle = {
+    height: "10vh",
+    backgroundColor: "whiteSmoke"
+  }
+
   return (
-    <div className="dropdown-menu" id="chart-container">
+    <div className="dropdown-menu" id="chart-container" style={chart.length === 0 ? emptyStyle : {} }>
       {chart.length > 0
         ? chart.map((food, index) => (
             <FoodChart {...food} key={index}></FoodChart>
           ))
-        : ""}
+        : (<EmptyChartCard></EmptyChartCard>)}
     </div>
   );
 };

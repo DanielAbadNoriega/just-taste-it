@@ -1,16 +1,40 @@
 export const SET_FOOD = "SET_FOOD";
+export const INCREMENT_FOOD = "INCREMENT_FOOD";
+export const DECREMENT_FOOD = "DECREMENT_FOOD";
 export const DELETE_FOOD = "DELETE_FOOD";
 
-export const setFood = (food) => {
+export const setFood = ({ name, img }) => {
   return {
     type: SET_FOOD,
-    payload: { food },
+    payload: {
+      name,
+      img,
+    },
+  };
+};
+export const incrementFood = (name) => {
+  return {
+    type: INCREMENT_FOOD,
+    payload: {
+      name,
+    },
   };
 };
 
-export const deleteFood = (id) => {
+export const decrementFood = (name) => {
+  return {
+    type: DECREMENT_FOOD,
+    payload: {
+      name,
+    },
+  };
+};
+
+export const deleteFood = (name) => {
   return {
     type: DELETE_FOOD,
-    payload: {id}
-  }
-}
+    payload: {
+      name,
+    },
+  };
+};
