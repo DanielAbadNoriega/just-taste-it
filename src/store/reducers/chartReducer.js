@@ -5,7 +5,8 @@ import {
   SET_FOOD,
 } from "../actions/chartActions";
 
-let initialState = [];
+let chartLocal = localStorage.getItem("Chart");
+let initialState = chartLocal ? JSON.parse(chartLocal) : [];
 /* let foodIds = [];
 let randomId = () => {
   let newRandom = () => Math.floor(Math.random() * 9999999) - 1;
@@ -18,8 +19,8 @@ let randomId = () => {
 }; */
 
 const setStateChart = (state, { name, img }) => {
-  if (state.length === 0)
-    return [
+  if (state.length === 0) {
+    let newState = [
       ...state,
       {
         name,
@@ -27,28 +28,35 @@ const setStateChart = (state, { name, img }) => {
         num: 1,
       },
     ];
+    localStorage.setItem("Chart", JSON.stringify(newState));
+    return newState;
+  }
 
-  return state.some((food) => food.name === name)
-    ? state.map((food) =>
-        food.name === name
-          ? {
-              ...food,
-              num: food.num + 1,
-            }
-          : food
+  localStorage["Chart"] = state.some((food) => food.name === name)
+    ? JSON.stringify(
+        state.map((food) =>
+          food.name === name
+            ? {
+                ...food,
+                num: food.num + 1,
+              }
+            : food
+        )
       )
-    : [
+    : JSON.stringify([
         ...state,
         {
           name,
           img,
           num: 1,
         },
-      ];
+      ]);
+
+  return JSON.parse(localStorage.getItem("Chart"));
 };
 
 const incrementFood = (state, name) => {
-  return state.map((food) =>
+  let newState = JSON.stringify(state.map((food) =>
     food.name === name
       ? {
           name: food.name,
@@ -56,23 +64,29 @@ const incrementFood = (state, name) => {
           num: food.num + 1,
         }
       : food
-  );
+  ));
+  localStorage["Chart"] = newState;
+  return JSON.parse(localStorage.getItem("Chart"));
 };
 
 const decrementFood = (state, name) => {
-  return state.map((food) =>
+  let newState = JSON.stringify(state.map((food) =>
     food.name === name && food.num > 1
       ? {
           ...food,
           num: food.num - 1,
         }
       : food
-  );
+  ));
+  localStorage["Chart"] = newState;
+  return JSON.parse(localStorage.getItem("Chart"));
 };
 
 const removeFood = (state, name) => {
-  return state.filter(food => food.name !== name);
-}
+  let newState = JSON.stringify(state.filter((food) => food.name !== name));
+  localStorage["Chart"] = newState;
+  return JSON.parse(localStorage.getItem("Chart")); 
+};
 
 export const chartReducer = (state = initialState, action) => {
   switch (action.type) {
